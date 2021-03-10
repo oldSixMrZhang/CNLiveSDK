@@ -1,0 +1,15 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+source 'https://cdn.cocoapods.org/'
+
+target 'CNLiveSDK_Example' do
+  pod 'CNLiveSDK', :path => '../'
+
+  target 'CNLiveSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

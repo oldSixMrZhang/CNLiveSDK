@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for CNLiveEncryptSDK.
+//! Project version number for CNLiveEncryptSDK. 3.4.7
 FOUNDATION_EXPORT double CNLiveEncryptSDKVersionNumber;
 
 //! Project version string for CNLiveEncryptSDK.

@@ -21,7 +21,7 @@
 #import "CNLiveBarrageAnimationView.h"
 
 @interface CNLiveWebcastManager : NSObject
-//version  2.2.0
+//version  2.2.1        buid 2.2.1.22061414
 
 + (CNLiveWebcastManager *)manager;
 

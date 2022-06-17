@@ -20,10 +20,26 @@
 #import "CNLiveCacheDefines.h"
 #import "CNLiveBarrageAnimationView.h"
 
+typedef NS_ENUM(NSInteger, CNLiveAPPType) {
+    /// 企业端APP
+    CNLiveAPPTypeB,
+    
+    ///用户端APP
+    CNLiveAPPTypeC,
+    
+    ///商家版APP
+    CNLiveAPPTypeBusiness,
+    
+};
 @interface CNLiveWebcastManager : NSObject
-//version  2.2.1        buid 2.2.1.22061414
+//version  2.2.1        buid 2.2.1.22061710
 
 + (CNLiveWebcastManager *)manager;
+
+/**
+ *  app 类型（只读）
+ */
+@property (nonatomic, readonly) CNLiveAPPType appType;
 
 /**
  *  应用ID（只读）
@@ -76,6 +92,18 @@
  @warning       必传参数
  */
 - (void)initWithAppId:(NSString *)appId appKey:(NSString *)appKey isTestEnvironment:(BOOL)isTestEnvironment;
+
+/**
+ @abstract      初始化直播云SDK
+ @param         appId              在open.cnlive.com网站申请得到的appId
+ @param         appKey             在open.cnlive.com网站申请得到的appKey
+ @param         userId             用户id
+ @param         appType            APP类型,区分 企业端,商家端,用户端
+ @param         isTestEnvironment  YES:测试环境  NO:正式环境
+
+ @warning       必传参数
+ */
+- (void)initWithAppId:(NSString *)appId appKey:(NSString *)appKey isTestEnvironment:(BOOL)isTestEnvironment userId:(NSString *)userId appType:(CNLiveAPPType)appType ;
 
 /**
  @abstract      获取版本号

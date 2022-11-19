@@ -73,4 +73,7 @@
 
 
 + (void)registerApp:(NSString *)appId appKey:(NSString *)appKey isTestEnvironment:(BOOL)isTestEnvironment version:(NSString *)version eventId:(NSString *)eventId;
+
+//是否可用log
++ (void)enableLog:(BOOL)isEnable;
 @end

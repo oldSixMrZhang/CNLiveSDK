@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CNLiveSDK'
-  s.version          = '0.3.5.0'
+  s.version          = '0.3.5.1'
   s.summary          = 'CNLiveSDK集合库'
 
 # This description is used to generate tags and improve search results.

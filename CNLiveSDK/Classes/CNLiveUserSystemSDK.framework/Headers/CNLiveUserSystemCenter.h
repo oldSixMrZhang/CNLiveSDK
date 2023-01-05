@@ -23,6 +23,14 @@
   */
  + (void)setAppId:(NSString *)appId appKey:(NSString *)appKey appSecret:(NSString *)appSecret isTestEnvironment:(BOOL)isTestEnvironment;
 
+
+/**
+ 授权令牌
+
+ @param token 授权令牌
+ */
++ (void)setToken:(NSString *)token;
+
 /**
  用户ID
 
@@ -339,7 +347,7 @@
 
 
 /**
- *  获取SDK版本号 v2.2.0
+ *  获取SDK版本号 v2.2.1
  */
 + (NSString *)getVersion;
 
